@@ -8,10 +8,12 @@ function App() {
   console.log(hello)
 
   return (
-    <div className="w-screen h-screen bg-blue-300">
-      <Header />
-    </div>
+    <>
+      <h1>
+        DEU BOM
+      </h1>
+    </>
   )
 }
 
-export default App
+export default App;

@@ -20,19 +20,21 @@ function Header() {
 
   return (
     <header className="flex p-5 justify-between bg-gray-100 shadow-lg">
-      <div className="flex items-center flex-shrink-0 hover:text-cyan-900 cursor-pointer">
-        <img src={logo} className="w-10 h-10 mr-2" alt="Logo" />
-        <h1 to="/" className="font-semibold mt-1 text-xl tracking-tight text-cyan-700">
-          UltraCar
-        </h1>
-      </div>
-    
+      <Link to={ '/' }>
+        <div className="flex items-center flex-shrink-0 hover:text-cyan-900 cursor-pointer">
+          <img src={logo} className="w-10 h-10 mr-2" alt="Logo" />
+          <h1 to="/" className="font-semibold mt-1 text-xl tracking-tight text-cyan-700">
+            UltraCar
+          </h1>
+        </div>
+      </Link>
+
       <div className="hidden md:flex items-center justify-between flex-wrap md:flex-no-wrap px-5">
         <ul className="hidden md:flex">
           {links.map(({ id, link, name }) => (
             <li
-              key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-black hover:scale-105 duration-200 tech selector"
+              key={ id }
+              className="px-4 mt-2 cursor-pointer capitalize text-lg text-gray-500 hover:text-black hover:scale-105 duration-200 selector"
             >
               <Link to={ link }>
                 { name }
@@ -53,8 +55,8 @@ function Header() {
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-cyan-50 to-cyan-100 text-gray-500">
           {links.map(({ id, link, name }) => (
             <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl selector hover:text-black"
+              key={ id }
+              className="px-4 cursor-pointer capitalize py-6 text-4xl selector hover:text-black mt-2"
             >
               <Link
                 onClick={() => setNav(!nav)}
