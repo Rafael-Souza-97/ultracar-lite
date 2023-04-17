@@ -11,3 +11,22 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+
+body{
+  min-width: 320px;
+}
+
+.selector::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid black;
+  margin-top: 3px;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.selector:hover::after,
+.selector:focus::after {
+  transform: scaleX(1);
+  font-weight: bold;
+}
