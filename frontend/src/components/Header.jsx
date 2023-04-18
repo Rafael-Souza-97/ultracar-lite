@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/uc-logo.png';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { headerLinks } from '../utils/navigate';
-import '../styles/Header.css';
 
 function Header() {
   const [nav, setNav] = useState(false);
