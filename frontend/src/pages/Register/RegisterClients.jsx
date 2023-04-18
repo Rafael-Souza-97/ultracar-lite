@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TextField} from '@mui/material';
 
-function RegisterProducts() {
+function RegisterClient() {
   const navigate = useNavigate();
   const [clientCPF, setClientCPF] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -239,4 +239,4 @@ function RegisterProducts() {
   );
 }
 
-export default RegisterProducts;
+export default RegisterClient;

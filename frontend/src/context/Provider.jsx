@@ -3,11 +3,18 @@ import PropTypes from 'prop-types';
 import ReactContext from './Context';
 
 function UltraCarProvider({ children }) {
-  const [hello, setHello] = useState('HELLO WORLD');
+  const [productRegister, setProductRegister] = useState({
+    title: '',
+    brand: '',
+    price: '',
+    qtde: '',
+    serial: '',
+    warehouse: '',
+  });
 
   const contextValue = {
-    hello,
-    setHello,
+    productRegister,
+    setProductRegister,
   };
 
   return (
