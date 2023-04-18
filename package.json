@@ -2,7 +2,7 @@
   "name": "ultracar-software-frontend",
   "private": true,
   "version": "1.0.0",
-  "description": "Software de gestão de oficinas mecânicas",
+  "description": "software de gestão de oficinas mecânicas",
   "type": "module",
   "scripts": {
     "start": "vite",
