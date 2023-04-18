@@ -1,6 +1,6 @@
 const mockEmployees = [
   {
-    name: 'João da Silva',
+    name: 'Pedro Souza',
     cpf: '123.456.789-00',
     cel: '(11) 99999-9999',
     office: 'Mecânico',
