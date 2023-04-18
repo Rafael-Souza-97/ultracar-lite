@@ -1,4 +1,4 @@
-const mockEmployees = [
+const mockOS = [
   {
     name: 'Juliana Lima',
     cpf: '456.789.123-45',
@@ -8,12 +8,12 @@ const mockEmployees = [
     neighbor: 'Centro',
     car: 'Ford Ka 2015',
     plate: 'DEF-5678',
-    mechanic: 'Lucas Silva',
+    mechanic: 'Lucas',
     service: 'Troca de pneus',
     status: 'Em andamento',
     parts: 'jogo de pneus Goodyear',
     price: '820,00',
-    observacoes: 'Cliente aguarda orçamento para troca de óleo e filtro'
+    obs: 'Cliente aguarda orçamento para troca de óleo e filtro'
   },
   {
     name: 'Márcio Pereira',
@@ -24,12 +24,12 @@ const mockEmployees = [
     neighbor: 'Savassi',
     car: 'Volkswagen Gol 2010',
     plate: 'GHI-9012',
-    mechanic: 'Pedro Souza',
+    mechanic: 'Pedro',
     service: 'Troca de correia dentada',
     status: 'Aguardando peça',
     parts: '',
     price: '0,00',
-    observacoes: 'Necessidade de revisão do sistema de ar condicionado'
+    obs: 'Necessidade de revisão do sistema de ar condicionado'
   },
   {
     name: 'Ricardo Alves',
@@ -40,12 +40,12 @@ const mockEmployees = [
     neighbor: 'Alto da XV',
     car: 'Toyota Corolla 2019',
     plate: 'JKL-3456',
-    mechanic: 'Rafael Fernandes',
+    mechanic: 'Rafael',
     service: 'Troca de pastilhas e discos de freio',
     status: 'Concluído',
     parts: '4 pastilhas de freio Bosch, 2 discos de freio Bosch',
     price: '1.200,00',
-    observacoes: 'Cliente solicitou orçamento para troca de pneus e balanceamento'
+    obs: 'Cliente solicitou orçamento para troca de pneus e balanceamento'
   },
   {
     name: 'Lívia Oliveira',
@@ -56,12 +56,12 @@ const mockEmployees = [
     neighbor: 'Moinhos de Vento',
     car: 'Chevrolet Onix 2018',
     plate: 'MNO-6789',
-    mechanic: 'Lucas Silva',
+    mechanic: 'Lucas',
     service: 'Troca de óleo e filtro',
     status: 'Em andamento',
     parts: 'filtro de óleo',
     price: '125,00',
-    observacoes: 'Necessidade de limpeza do sistema de ar condicionado'
+    obs: 'Necessidade de limpeza do sistema de ar condicionado'
   },
   {
     name: 'José da Silva',
@@ -72,12 +72,12 @@ const mockEmployees = [
     neighbor: 'Centro',
     car: 'Volkswagen Gol 2015',
     plate: 'DEF-5678',
-    mechanic: 'Lucas Oliveira',
+    mechanic: 'Gabriel',
     service: 'Revisão Preventiva',
     status: 'Em andamento',
     parts: '',
     price: '',
-    observacoes: 'Necessidade de alinhamento e balanceamento'
+    obs: 'Necessidade de alinhamento e balanceamento'
   },
   {
     name: 'Aline Souza',
@@ -88,12 +88,12 @@ const mockEmployees = [
     neighbor: 'Bairro Novo',
     car: 'Ford Fiesta 2012',
     plate: 'GHI-9012',
-    mechanic: 'Rafael Fernandes',
+    mechanic: 'Rafael',
     service: 'Troca de óleo e filtro',
     status: 'Em andamento',
     parts: 'filtro de óleo',
     price: '',
-    observacoes: ''
+    obs: ''
   },
   {
     name: 'Pedro Oliveira',
@@ -104,12 +104,12 @@ const mockEmployees = [
     neighbor: 'Jardim das Flores',
     car: 'Chevrolet Onix 2019',
     plate: 'JKL-3456',
-    mechanic: 'Lucas Oliveira',
+    mechanic: 'Gabriel',
     service: 'Troca de pneus',
     status: 'Concluído',
     parts: 'jogo de pneus Pirelli P7',
     price: '1.200,00',
-    observacoes: ''
+    obs: ''
   },
   {
     name: 'Mariana Santos',
@@ -120,12 +120,12 @@ const mockEmployees = [
     neighbor: 'Praia da Costa',
     car: 'Toyota Corolla 2020',
     plate: 'MNO-7890',
-    mechanic: 'Rafael Fernandes',
+    mechanic: 'Rafael',
     service: 'Troca de pastilhas e discos de freio',
     status: 'Aguardando peça',
     parts: '',
     price: '',
-    observacoes: 'Necessidade de revisão da suspensão'
+    obs: 'Necessidade de revisão da suspensão'
   },
   {
     name: 'Lucas Ferreira',
@@ -136,13 +136,93 @@ const mockEmployees = [
     neighbor: 'Jardim das Flores',
     car: 'Fiat Uno 2008',
     plate: 'PQR-1234',
-    mechanic: 'Rafael Fernandes',
+    mechanic: 'Rafael',
     service: 'Revisão Preventiva',
     status: 'Concluído',
     parts: '',
     price: '350,00',
-    observacoes: 'Necessidade de limpeza do sistema de ar condicionado'
+    obs: 'Necessidade de limpeza do sistema de ar condicionado'
   },
+  {
+    name: 'Felipe Rodrigues',
+    cpf: '123.456.789-10',
+    email: 'felipe.rodrigues@gmail.com',
+    cel: '(21) 99999-9999',
+    address: 'Rua 13 de Maio, 100',
+    neighbor: 'Centro',
+    car: 'Fiat Palio 2015',
+    plate: 'ABC-1234',
+    mechanic: 'Lucas',
+    service: 'Troca de óleo e filtro',
+    status: 'Concluído',
+    parts: 'Filtro de óleo',
+    price: '150,00',
+    obs: ''
+    },
+    {
+    name: 'Juliana Souza',
+    cpf: '234.567.890-12',
+    email: 'juliana.souza@gmail.com',
+    cel: '(31) 88888-8888',
+    address: 'Rua dos Pinheiros, 500',
+    neighbor: 'Savassi',
+    car: 'Renault Sandero 2019',
+    plate: 'DEF-5678',
+    mechanic: 'Pedro',
+    service: 'Troca de correia dentada',
+    status: 'Em andamento',
+    parts: '',
+    price: '0,00',
+    obs: 'Necessidade de revisão do sistema de ar condicionado'
+    },
+    {
+    name: 'Rodrigo Costa',
+    cpf: '345.678.901-23',
+    email: 'rodrigo.costa@gmail.com',
+    cel: '(41) 77777-7777',
+    address: 'Rua do Bosque, 300',
+    neighbor: 'Alto da XV',
+    car: 'Toyota Corolla 2020',
+    plate: 'JKL-3456',
+    mechanic: 'Rafael',
+    service: 'Troca de pastilhas e discos de freio',
+    status: 'Aguardando peça',
+    parts: '',
+    price: '',
+    obs: 'Necessidade de limpeza do sistema de ar condicionado'
+    },
+    {
+    name: 'Ana Paula',
+    cpf: '678.901.234-56',
+    email: 'ana.paula@gmail.com',
+    cel: '(51) 66666-6666',
+    address: 'Rua das Flores, 200',
+    neighbor: 'Moinhos de Vento',
+    car: 'Chevrolet Onix 2020',
+    plate: 'MNO-6789',
+    mechanic: 'Lucas',
+    service: 'Revisão preventiva',
+    status: 'Em andamento',
+    parts: '',
+    price: '',
+    obs: 'Necessidade de balanceamento'
+    },
+    {
+    name: 'João Ferreira',
+    cpf: '901.234.567-89',
+    email: 'joao.ferreira@gmail.com',
+    cel: '(21) 99999-9999',
+    address: 'Rua das Flores, 200',
+    neighbor: 'Centro',
+    car: 'Volkswagen Gol 2015',
+    plate: 'DEF-5678',
+    mechanic: 'Gabriel',
+    service: 'Troca de pneus',
+    status: 'Concluído',
+    parts: 'Jogo de pneus Goodyear',
+    price: '800,00',
+    obs: 'Necessidade de alinhamento'
+    },
 ];
 
-export default mockEmployees;
+export default mockOS;

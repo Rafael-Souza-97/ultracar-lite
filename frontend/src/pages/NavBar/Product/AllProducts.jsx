@@ -4,6 +4,9 @@ import mockProducts from '../../../Mocks/Products/Products.mock'
 function AllProducts() {
   return (
     <div className="overflow-x-auto py-10 mt-1 mb-14">
+      <h1 className="mb-14 text-gray-600 text-center text-4xl font-light">
+        Produtos
+      </h1>
       <table className="table-auto w-full">
         <thead>
           <tr>

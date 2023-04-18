@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
+import InConstruction from '../../../components/inConstruction';
 
 function ClientOS() {
   return (
-    <div>ClientOS</div>
+    <InConstruction />
   )
 }
 
-export default ClientOS
+export default ClientOS;

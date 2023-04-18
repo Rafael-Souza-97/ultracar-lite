@@ -36,11 +36,11 @@ function Services() {
       <form onSubmit={handleSearchSubmit} className='flex mb-10'>
         <div>
           <TextField
-            type="number"
-            placeholder="Número da O.S."
+            type="text"
+            placeholder="Mecânico responsável"
             value={searchedService}
             id="outlined-basic"
-            label="Digite o número da OS"
+            label="Nome do mecânico responsável"
             variant="outlined"
             maxLength={11}
             inputProps={{
