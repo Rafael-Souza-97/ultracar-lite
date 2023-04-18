@@ -2,22 +2,22 @@ export const headerLinks = [
   {
     id: 1,
     name: "Cliente",
-    link: "cliente",
+    link: "client",
   },
   {
     id: 2,
     name: "Produtos",
-    link: "produtos",
+    link: "product",
   },
   {
     id: 3,
     name: "Colaboladores",
-    link: "colaboradores",
+    link: "employee",
   },
   {
     id: 4,
     name: "Serviços",
-    link: "servicos",
+    link: "service",
   },
 ];
 

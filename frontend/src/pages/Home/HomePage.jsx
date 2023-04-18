@@ -8,7 +8,7 @@ const HomePage = () => {
       <img src={template} alt="uc_template" className="w-full h-auto mt-5 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:max-w-2xl"/>
       <div className='max-w-xl'>
         <h1 className="text-gray-500 italic text-center text-xl font-light mt-5 ">
-          Gere lucros de forma fácil e eficiente com o UltraCar<span className="font-medium text-cyan-500">lite</span>
+          Gere lucros de forma fácil e eficiente com o Ultracar<span className="font-medium text-cyan-500"> lite</span>
         </h1>
         <h1 className="text-gray-500 italic text-center text-xl font-light mb-5">
           - a solução simplificada para gerenciar sua oficina.

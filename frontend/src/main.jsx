@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom/client';
 import HomePage from './pages/Home/HomePage';
 import UltraCarProvider from './context/Provider';
 import App from './App';
-import Clients from './pages/NavBar/Clients';
+import Clients from './pages/NavBar/Client/Clients';
+import ClientOS from './pages/NavBar/Client/ClientOS';
 import Products from './pages/NavBar/Products';
 import Employees from './pages/NavBar/Employees';
 import Services from './pages/NavBar/Services';
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route element={ <App /> }>
           <Route path="/" element={ <HomePage /> } />
           <Route path="/client" element={ <Clients /> } />
+          <Route path="/client/:id" element={ <ClientOS /> } />
           <Route path="/product" element={ <Products /> } />
           <Route path="/employee" element={ <Employees /> } />
           <Route path="/service" element={ <Services /> } />

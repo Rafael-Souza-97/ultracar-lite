@@ -1,0 +1,5 @@
+.right-rounded {
+  border-radius: 0 15px 15px 0;
+  margin-left: -1px;
+  z-index: 10;
+}
