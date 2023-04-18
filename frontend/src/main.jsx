@@ -9,8 +9,12 @@ import ClientOS from './pages/NavBar/Client/ClientOS';
 import Products from './pages/NavBar/Product/Products';
 import ProductSearch from './pages/NavBar/Product/ProductSearch';
 import AllProducts from './pages/NavBar/Product/AllProducts';
-import Employees from './pages/NavBar/Employees';
-import Services from './pages/NavBar/Services';
+import Services from './pages/NavBar/Services/Services';
+import ServiceOS from './pages/NavBar/Services/ServiceOS';
+import AllServices from './pages/NavBar/Services/AllServices';
+import Employees from './pages/NavBar/Employees/Employees';
+import EmployeeSearch from './pages/NavBar/Employees/EmployeeSearch';
+import AllEmployees from './pages/NavBar/Employees/AllEmployees';
 import RegisterClients from './pages/Register/RegisterClients';
 import RegisterProducts from './pages/Register/RegisterProducts';
 import RegisterEmployees from './pages/Register/RegisterEmployees';
@@ -29,8 +33,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/product" element={ <Products /> } />
           <Route path="/product/:id" element={ <ProductSearch /> } />
           <Route path="/allproducts" element={ <AllProducts /> } />
-          <Route path="/employee" element={ <Employees /> } />
           <Route path="/service" element={ <Services /> } />
+          <Route path="/service/:id" element={ <ServiceOS /> } />
+          <Route path="/allservices" element={ <AllServices /> } />
+          <Route path="/employee" element={ <Employees /> } />
+          <Route path="/employee/:id" element={ <EmployeeSearch /> } />
+          <Route path="/allemployees" element={ <AllEmployees /> } />
           <Route path="/register/client" element={ <RegisterClients /> } />
           <Route path="/register/product" element={ <RegisterProducts /> } />
           <Route path="/register/employee" element={ <RegisterEmployees /> } />
