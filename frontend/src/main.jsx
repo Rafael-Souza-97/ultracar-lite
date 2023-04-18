@@ -21,8 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/product" element={ <Products /> } />
           <Route path="/employee" element={ <Employees /> } />
           <Route path="/service" element={ <Services /> } />
-        </Route>
           <Route path="*" element={ <NotFound /> } />
+        </Route>
       </Routes>
     </UltraCarProvider>
   </BrowserRouter>

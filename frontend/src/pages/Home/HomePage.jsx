@@ -15,11 +15,11 @@ const HomePage = () => {
         </h1>
       </div>
 
-      <div className="flex w-full justify-center mt-10">
+      <div className="flex w-full justify-center mt-5 mb-5">
         <div className={`grid gap-20 py-10 px-5 mb-10 sm:mb-20 md:mb-16 sm:px-8 grid-cols-1 sm:grid-cols-2 sm:gap-20 max-w-screen-lg`}>
           { cardHomeLinks.map(({ id, name, href, style }) => (
             <a key={id} className="flex items-center justify-center text-center cursor-pointer" href={ href } rel="noreferrer" target="_blank">
-              <div className={`shadow-md rounded-lg py-10  md:py-14 w-full ${style} duration-200 hover:scale-105 bg-gray-50 hover:bg-gray-100`}>
+              <div className={`shadow-md rounded-lg py-10 px-7 md:py-14 w-full ${style} duration-200 hover:scale-105 bg-gray-50 hover:bg-gray-100`}>
                 <button className="align-center justify-center px-6 mb-3 mx-auto duration-200 text-center opacity-90 hover:opacity-100 font-bold">
                   { name }
                 </button>
