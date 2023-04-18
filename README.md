@@ -7,6 +7,7 @@ Com o [UltraCar lite](https://ultracar-lite.vercel.app/), você pode adicionar c
 O UltraCar Lite também possui uma área dedicada aos colaboradores da oficina, onde é possível gerenciar as atividades de cada um deles. Assim, você pode garantir que todas as tarefas sejam realizadas de maneira eficiente e dentro do prazo estabelecido. Alem disso, o [UltraCar lite](https://ultracar-lite.vercel.app/) é um software fácil de usar e com uma interface intuitiva. Compatível com dispositivos móveis e desktop, você pode acessar e gerenciar suas informações de qualquer lugar e a qualquer momento.
 
 Não perca mais tempo com gestão manual de sua oficina mecânica. Experimente agora mesmo o UltraCar Lite e veja como ele pode ajudá-lo a gerenciar sua oficina de maneira eficiente e completa.
+
 <br>
 
 ## Rotas
@@ -50,6 +51,18 @@ O software possui as seguintes rotas:
 - `/suport`: Página para suporte técnico.
 
 - `*`: Página de erro, caso a rota não exista.
+
+<br>
+
+## React
+
+O [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript amplamente utilizada no desenvolvimento de interfaces de usuário. Ele possui uma série de recursos que facilitam a criação de aplicativos web modernos e eficientes. Uma das principais vantagens do React é sua capacidade de dividir o aplicativo em componentes reutilizáveis, tornando o código mais organizado e fácil de manter.
+
+Além disso, o React oferece uma série de recursos que melhoram a experiência do usuário, como a renderização rápida de componentes e a atualização dinâmica de dados. A renderização rápida é possível porque o React utiliza uma abordagem de virtual DOM, em que apenas as partes da página que precisam ser atualizadas são modificadas, em vez de renderizar a página inteira.
+
+Outro recurso importante do React é a possibilidade de criar componentes personalizados. Isso permite que os desenvolvedores criem elementos customizados que podem ser usados em vários lugares do aplicativo, economizando tempo e reduzindo a redundância de código.
+
+No geral, o React é uma biblioteca poderosa que oferece muitas ferramentas úteis para criar interfaces de usuário eficientes e intuitivas.
 
 <br>
 
