@@ -1,76 +1,84 @@
 const mockEmployees = [
   {
-    nome: 'João da Silva',
-    telefone: '(11) 99999-9999',
-    carro: 'Ford Fiesta 2012',
-    servico: 'Troca de óleo e filtro',
-    status: 'Em andamento',
-    pecasUtilizadas: 'filtro de óleo',
-    observacoes: 'Necessidade de troca de pastilhas de freio'
-  },
-  {
-    nome: 'Ana Luiza Oliveira',
-    telefone: '(21) 88888-8888',
-    carro: 'Chevrolet Onix 2019',
-    servico: 'Troca de pneus',
-    status: 'Concluído',
-    pecasUtilizadas: 'jogo de pneus Pirelli P7',
-    observacoes: 'Cliente aguarda orçamento para troca de amortecedores'
-  },
-  {
-    nome: 'Marcos Antônio Santos',
-    telefone: '(31) 77777-7777',
-    carro: 'Volkswagen Gol 2015',
-    servico: 'Troca de correia dentada',
-    status: 'Aguardando peça',
-    pecasUtilizadas: '',
-    observacoes: 'Necessidade de troca de velas e cabos de vela'
-  },
-  {
-    nome: 'Luciana Ferreira',
-    telefone: '(41) 66666-6666',
-    carro: 'Fiat Uno 2008',
-    servico: 'Revisão preventiva',
-    status: 'Em andamento',
-    pecasUtilizadas: 'filtro de ar',
-    observacoes: 'Necessidade de limpeza do sistema de ar condicionado'
-  },
-  {
-    nome: 'Marcelo Almeida',
-    telefone: '(51) 55555-5555',
-    carro: 'Toyota Corolla 2020',
-    servico: 'Troca de pastilhas',
-    status: 'Concluído',
-    pecasUtilizadas: '4 pastilhas de freio Fischer',
-    observacoes: 'Cliente solicitou orçamento para troca de pneus e balanceamento'
-  },
-  {
-    nome: 'Rafael Fernandes',
-    telefone: '(11) 88888-8888',
-    carro: 'Renault Clio 2014',
-    servico: 'Troca de cabos de vela',
-    status: 'Concluído',
-    pecasUtilizadas: 'cabos de vela Bosch',
-    observacoes: 'Necessidade de revisão de freios'
-  },
-  {
-    nome: 'Mariana Costa',
-    telefone: '(21) 77777-7777',
-    carro: 'Ford Focus 2017',
-    servico: 'Reparo na suspensão',
-    status: 'Em andamento',
-    pecasUtilizadas: 'amortecedores Monroe',
-    observacoes: 'Necessidade de alinhamento e balanceamento'
-  },
-  {
-    nome: 'Carlos Eduardo Lima',
-    telefone: '(31) 66666-6666',
-    carro: 'Hyundai HB20 2021',
-    servico: 'Troca de correia do alternador',
-    status: 'Concluído',
-    pecasUtilizadas: 'correia do alternador Contitech',
-    observacoes: 'Cliente aguarda orçamento para troca de óleo'
-  }
+    name: 'João da Silva',
+    cpf: '123.456.789-00',
+    cel: '(11) 99999-9999',
+    office: 'Mecânico',
+    wage: 'R$ 3.000,00',
+    startDate: '01/01/2020',
+    benefits: 'Vale transporte',
+    address: 'Rua A, nº 123'
+    },
+    {
+    name: 'Maria Souza',
+    cpf: '987.654.321-00',
+    cel: '(21) 88888-8888',
+    office: 'Atendente',
+    wage: 'R$ 1.500,00',
+    startDate: '01/05/2021',
+    benefits: 'Vale alimentação',
+    address: 'Av. B, nº 456'
+    },
+    {
+    name: 'Pedro Oliveira',
+    cpf: '111.222.333-44',
+    cel: '(31) 77777-7777',
+    office: 'Mecânico',
+    wage: 'R$ 3.500,00',
+    startDate: '01/01/2019',
+    benefits: 'Vale transporte, vale refeição',
+    address: 'Rua C, nº 789'
+    },
+    {
+    name: 'Fernanda Santos',
+    cpf: '444.555.666-77',
+    cel: '(41) 66666-6666',
+    office: 'Atendente',
+    wage: 'R$ 1.800,00',
+    startDate: '01/02/2020',
+    benefits: 'Vale transporte',
+    address: 'Av. D, nº 1010'
+    },
+    {
+    name: 'Roberto Almeida',
+    cpf: '777.888.999-00',
+    cel: '(51) 55555-5555',
+    office: 'Mecânico',
+    wage: 'R$ 4.000,00',
+    startDate: '01/01/2018',
+    benefits: 'Vale transporte, vale refeição, plano de saúde',
+    address: 'Rua E, nº 111'
+    },
+    {
+    name: 'Ana Clara Oliveira',
+    cpf: '222.333.444-55',
+    cel: '(11) 99999-8888',
+    office: 'Estagiária',
+    wage: 'R$ 900,00',
+    startDate: '01/06/2021',
+    benefits: '',
+    address: 'Av. F, nº 1212'
+    },
+    {
+    name: 'Ricardo Sousa',
+    cpf: '555.666.777-88',
+    cel: '(21) 88888-7777',
+    office: 'Mecânico',
+    wage: 'R$ 3.200,00',
+    startDate: '01/01/2021',
+    benefits: 'Vale transporte',
+    address: 'Rua G, nº 1414'
+    },
+    {
+    name: 'Amanda Costa',
+    cpf: '888.999.000-11',
+    cel: '(31) 77777-8888',
+    office: 'Atendente',
+    wage: 'R$ 1.500,00',
+    startDate: '01/05/2019',
+    benefits: 'Vale transporte, vale refeição',
+    address: 'Av. H, nº 1616'
+    },
 ];
 
 export default mockEmployees;

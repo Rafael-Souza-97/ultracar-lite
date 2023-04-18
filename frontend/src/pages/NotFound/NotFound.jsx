@@ -17,7 +17,7 @@ function NotFound() {
   </div>
 
   <Link to="/">
-    <button className="font-mono text-sm sm:text-base mt-1 px-4 py-3 mb-28 sm:mb-28 md:mb-40 lg:mb-28 font-medium text-white bg-gray-600 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700 hover:text-cyan-200">
+    <button className="font-mono text-sm sm:text-base mt-1 px-4 py-3 mb-28 sm:mb-28 md:mb-40 lg:mb-28 font-medium text-white bg-gray-600 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
       Voltar para a página inicial
     </button>
   </Link>

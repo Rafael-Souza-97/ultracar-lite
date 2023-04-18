@@ -1,9 +1,12 @@
 import React from 'react';
+import InConstruction from '../../components/inConstruction';
 
-function RegisterServices() {
+function RegisterService() {
   return (
-    <div>RegisterServices</div>
+    <>
+     <InConstruction />
+    </>
   )
 }
 
-export default RegisterServices;
+export default RegisterService;

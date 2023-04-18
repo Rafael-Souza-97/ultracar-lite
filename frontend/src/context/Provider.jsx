@@ -21,12 +21,24 @@ function UltraCarProvider({ children }) {
     car: '',
     plate: '',
   });
+  const [employeeRegister, setEmployeeRegister] = useState({
+    name: '',
+    cpf: '',
+    cel: '',
+    office: '',
+    wage: '',
+    startDate: '',
+    benefits: '',
+    address: '',
+  })
 
   const contextValue = {
     productRegister,
     clientRegister,
+    employeeRegister,
     setProductRegister,
     setClientRegister,
+    setEmployeeRegister,
   };
 
   return (

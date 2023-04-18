@@ -45,7 +45,7 @@ function RegisterClient() {
       .replace(/(\d{3})(\d)/, '$1.$2')
       .replace(/(\d{3})(\d{1,2})/, '$1-$2')
       .slice(0, 14);
-      
+
     setClientRegister((prevState) => ({ ...prevState, cpf: formattedCPF }));
   }
 
