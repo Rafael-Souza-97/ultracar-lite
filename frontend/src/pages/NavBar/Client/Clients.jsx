@@ -55,7 +55,7 @@ function Client() {
       </h1>
 
       <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-14">
-        Nesta área você poderá ter acesso as ordens de serviço de um automóvel específico
+        Nesta área você poderá buscar os dados de um cliente através do CPF
       </h1>
       <form onSubmit={handleSearchSubmit} className='flex'>
         <div>
@@ -89,16 +89,27 @@ function Client() {
       {errorMessage && (
         <p className="text-red-500 mt-5">{errorMessage}</p>
       )}
+
       <div className='mt-10'>
         <h1 className="text-gray-800 text-center font-bold text-xl mb-10">
           OU
         </h1>
-        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-10">
-          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para acessar pelo celular
+        <button
+          type='submit'
+          className="w-full py-4 px-4 text-white bg-gray-800 hover:bg-black hover:bg-corBotaoHover focus:outline-none rounded-2xl"
+          onClick={() => navigate('/allclients')}
+        >
+          Buscar todos os Clientes
+        </button>
+      </div>
+
+      <div className='mt-24'>
+        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-5">
+          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para fazer a busca do cliente pelo celular
         </h1>
       </div>
 
-      <img src={QRCode} alt="QR Code" className="h-64 w-64 mb-24 lg:mb-28" />
+      <img src={QRCode} alt="QR Code" className="h-64 w-64 mb-10 lg:mb-16" />
     </div>
   );
 }

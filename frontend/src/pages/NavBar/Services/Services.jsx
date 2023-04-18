@@ -27,11 +27,11 @@ function Services() {
   return (
     <div className="flex flex-col items-center mt-12">
       <h1 className="mb-14 text-gray-600 text-center text-4xl font-light">
-        Serviços
+        Área de Serviços
       </h1>
 
       <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-10">
-        Nesta área você poderá buscar por uma Ordem de Serviço específica
+      Nesta área você poderá ter acesso as ordens de serviço de um automóvel específico
       </h1>
       <form onSubmit={handleSearchSubmit} className='flex mb-10'>
         <div>
@@ -73,12 +73,9 @@ function Services() {
           Buscar todas as Ordens de Serviço
         </button>
       </div>
-      <div className='mt-10'>
-        <h1 className="text-gray-800 text-center font-bold text-xl mb-10">
-          OU
-        </h1>
-        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-10">
-          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para acessar pelo celular
+      <div className='mt-24'>
+        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-5">
+          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para fazer a busca do serviço pelo celular
         </h1>
       </div>
 

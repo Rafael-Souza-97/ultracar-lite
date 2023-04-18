@@ -6,6 +6,7 @@ import UltraCarProvider from './context/Provider';
 import App from './App';
 import Clients from './pages/NavBar/Client/Clients';
 import ClientOS from './pages/NavBar/Client/ClientOS';
+import AllClients from './pages/NavBar/Client/AllClients';
 import Products from './pages/NavBar/Product/Products';
 import ProductSearch from './pages/NavBar/Product/ProductSearch';
 import AllProducts from './pages/NavBar/Product/AllProducts';
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={ <HomePage /> } />
           <Route path="/client" element={ <Clients /> } />
           <Route path="/client/:id" element={ <ClientOS /> } />
+          <Route path="/allclients" element={ <AllClients /> } />
           <Route path="/product" element={ <Products /> } />
           <Route path="/product/:id" element={ <ProductSearch /> } />
           <Route path="/allproducts" element={ <AllProducts /> } />

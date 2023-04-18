@@ -27,7 +27,7 @@ function Products() {
   return (
     <div className="flex flex-col items-center mt-12">
       <h1 className="mb-14 text-gray-600 text-center text-4xl font-light">
-        Produtos
+        Área de Produtos
       </h1>
 
       <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-10">
@@ -73,12 +73,10 @@ function Products() {
           Buscar todos os Produtos
         </button>
       </div>
-      <div className='mt-10'>
-        <h1 className="text-gray-800 text-center font-bold text-xl mb-10">
-          OU
-        </h1>
-        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-10">
-          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para acessar pelo celular
+
+      <div className='mt-24'>
+        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-5">
+          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para fazer a busca do protudo pelo celular
         </h1>
       </div>
 
