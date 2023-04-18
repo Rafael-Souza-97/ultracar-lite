@@ -11,14 +11,15 @@ export const headerLinks = [
   },
   {
     id: 3,
-    name: "Colaboladores",
-    link: "employee",
-  },
-  {
-    id: 4,
     name: "Serviços",
     link: "service",
   },
+  {
+    id: 4,
+    name: "Colaboladores",
+    link: "employee",
+  },
+
 ];
 
 export const cardHomeLinks = [

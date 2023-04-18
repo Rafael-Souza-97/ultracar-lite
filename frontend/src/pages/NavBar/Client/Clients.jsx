@@ -93,8 +93,8 @@ function Client() {
         <h1 className="text-gray-800 text-center font-bold text-xl mb-10">
           OU
         </h1>
-        <h1 className="text-gray-600 text-center text-xl font-light mb-10">
-          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo:
+        <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-10">
+          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para acessar pelo celular
         </h1>
       </div>
 
