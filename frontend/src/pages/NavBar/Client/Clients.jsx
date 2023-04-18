@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TextField } from '@mui/material';
-import QRCode from '../../../assets/qrCode.png';
+import QRCode from '../../../assets/QRCode/qrCode-client.png';
 import '../../../styles/Client.css';
 
 function Client() {

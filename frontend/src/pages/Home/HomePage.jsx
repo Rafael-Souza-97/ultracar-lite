@@ -1,5 +1,5 @@
 import React from 'react';
-import template from '../../assets/uc-template.png';
+import template from '../../assets/UltraCar-Logos/uc-template.png';
 import { cardHomeLinks } from '../../utils/navigate';
 
 const HomePage = () => {
