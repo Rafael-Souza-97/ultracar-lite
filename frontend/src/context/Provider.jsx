@@ -11,10 +11,22 @@ function UltraCarProvider({ children }) {
     serial: '',
     warehouse: '',
   });
+  const [clientRegister, setClientRegister] = useState({
+    name: '',
+    cpf: '',
+    email: '',
+    cel: '',
+    address: '',
+    neighbor: '',
+    car: '',
+    plate: '',
+  });
 
   const contextValue = {
     productRegister,
+    clientRegister,
     setProductRegister,
+    setClientRegister,
   };
 
   return (

@@ -1,64 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { TextField} from '@mui/material';
+import ProductContext from '../../context/Context'; 
+import { TextField } from '@mui/material';
+import mockClients from '../../Mocks/Clients/Clients.mock';
+import validateClient from '../../validations/RegisterClients.validations';
 
 function RegisterClient() {
   const navigate = useNavigate();
-  const [clientCPF, setClientCPF] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [clientRegister, setClientRegister] = useState({
-    name: '',
-    cpf: '',
-    email: '',
-    cel: '',
-    address: '',
-    neighbor: '',
-    car: '',
-    plate: '',
-  });
+  const { clientRegister, setClientRegister } = useContext(ProductContext);
 
   function handleClick(event) {
     event.preventDefault();
     
-    if (
-      clientRegister.name === "" ||
-      clientRegister.email === "" ||
-      clientRegister.cel === "" ||
-      clientRegister.address === "" ||
-      clientRegister.neighbor === "" ||
-      clientRegister.car === "" ||
-      clientRegister.plate === ""
-    ) {
-      setErrorMessage("Preencha todos os campos corretamente.");
+    const error = validateClient(clientRegister);
+    
+    if (error) {
+      setErrorMessage(error);
       return;
     }
-    
-    const cpf = clientCPF.replace(/\D/g, "");
-    if (cpf.length !== 11) {
-      setErrorMessage("O CPF deve ter 11 caracteres.");
-      return;
-    }
-    setClientRegister((prevState) => {
-      const updatedClientRegister = {
-        ...prevState,
-        cpf: cpf,
-      };
-      console.log('updatedClientRegister -->', updatedClientRegister);
-      return updatedClientRegister;
-    });
-    
+
+    mockClients.push(clientRegister);
+    setClientRegister({
+      name: '',
+      cpf: '',
+      email: '',
+      cel: '',
+      address: '',
+      neighbor: '',
+      car: '',
+      plate: '',
+    })
+
+    console.log('Banco de dados Clientes-->', mockClients)
     setErrorMessage("");
     navigate(`/`);
-  }
-
-  useEffect(() => {
-    console.log('updated clientRegister:', clientRegister);
-  }, [clientRegister]);
-  
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setClientRegister((prevState) => ({ ...prevState, [name]: value }));
   }
 
   function handleCPF(event) {
@@ -67,17 +43,28 @@ function RegisterClient() {
       .replace(/\D/g, '')
       .replace(/(\d{3})(\d)/, '$1.$2')
       .replace(/(\d{3})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-    setClientCPF(formattedCPF);
-    if (formattedCPF.length === 14) {
-      const cpf = formattedCPF.replace(/\D/g, '');
-      if (cpf.length === 11) {
-        setErrorMessage('');
-      } else {
-        setErrorMessage('O CPF deve ter 11 caracteres.');
-      }
-    }
+      .replace(/(\d{3})(\d{1,2})/, '$1-$2')
+      .slice(0, 14);
+      
+    setClientRegister((prevState) => ({ ...prevState, cpf: formattedCPF }));
   }
+
+  function handlePhone(event) {
+    const inputPhone = event.target.value;
+    const formattedPhone = inputPhone
+      .replace(/\D/g, '')
+      .replace(/(\d{2})(\d)/, '($1) $2')
+      .replace(/(\d{5})(\d)/, '$1-$2')
+      .slice(0, 15);
+  
+    setClientRegister((prevState) => ({ ...prevState, cel: formattedPhone }));
+  }
+  
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setClientRegister((prevState) => ({ ...prevState, [name]: value }));
+  }
+
 
   return (
     <div className="flex flex-col items-center mt-12">
@@ -112,22 +99,22 @@ function RegisterClient() {
           </div>
 
           <div>
-          <TextField
-              type="text"
-              placeholder="CPF do Cliente"
-              value={clientCPF}
-              name='cpf'
-              id="outlined-basic"
-              label="Digite o CPF do Cliente"
-              variant="outlined"
-              maxLength={11}
-              inputProps={{
-                pattern: '[0-9]*',
-              }}
-              onChange={handleCPF}
-              className="w-64 sm:w-72 md:w-80 xl:w-96"
-              required
-            />
+            <TextField
+                type="text"
+                placeholder="CPF do Cliente"
+                value={clientRegister.cpf}
+                name='cpf'
+                id="outlined-basic"
+                label="Digite o CPF do Cliente"
+                variant="outlined"
+                maxLength={14}
+                inputProps={{
+                  pattern: '[0-9]*',
+                }}
+                onChange={ handleCPF }
+                className="w-64 sm:w-72 md:w-80 xl:w-96"
+                required
+              />
           </div>
 
           <div>
@@ -158,7 +145,7 @@ function RegisterClient() {
               inputProps={{
                 pattern: '[0-9]*',
               }}
-              onChange={handleChange}
+              onChange={handlePhone}
               className="w-64 sm:w-72 md:w-80 xl:w-96"
               required
             />

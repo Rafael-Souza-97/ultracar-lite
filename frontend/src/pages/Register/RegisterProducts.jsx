@@ -3,7 +3,7 @@ import ProductContext from '../../context/Context';
 import { useNavigate } from 'react-router-dom';
 import { TextField } from '@mui/material';
 import validateProduct from '../../validations/RegisterProducts.validations';
-import mockProducts from '../../Mocks/Products';
+import mockProducts from '../../Mocks/Products/Products.mock';
 
 function RegisterProducts() {
   const navigate = useNavigate();
