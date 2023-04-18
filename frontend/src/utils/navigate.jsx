@@ -19,6 +19,11 @@ export const headerLinks = [
     name: "Colaboladores",
     link: "employee",
   },
+  {
+    id: 5,
+    name: "Suporte",
+    link: "suport",
+  },
 
 ];
 

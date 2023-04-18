@@ -21,6 +21,7 @@ import RegisterProducts from './pages/Register/RegisterProducts';
 import RegisterEmployees from './pages/Register/RegisterEmployees';
 import RegisterServices from './pages/Register/RegisterServices';
 import NotFound from './pages/NotFound/NotFound';
+import Suport from './pages/Suport/Suport';
 import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -45,6 +46,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/register/product" element={ <RegisterProducts /> } />
           <Route path="/register/employee" element={ <RegisterEmployees /> } />
           <Route path="/register/service" element={ <RegisterServices /> } />
+          <Route path="/register/service" element={ <RegisterServices /> } />
+          <Route path="/suport" element={ <Suport /> } />
           <Route path="*" element={ <NotFound /> } />
         </Route>
       </Routes>

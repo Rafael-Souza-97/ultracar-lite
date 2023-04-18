@@ -1,8 +1,11 @@
 import React from 'react';
+import InConstruction from '../../../components/inConstruction';
 
 function ProductSearch() {
   return (
-    <div>ProductSearch;</div>
+    <>
+      <InConstruction />
+    </>
   )
 }
 
