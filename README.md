@@ -106,7 +106,7 @@ O [ContextAPI](https://reactjs.org/docs/context.html) é uma das funcionalidades
 
 ## QR Code
 
-O [UltraCar lite](https://ultracar-lite.vercel.app/) possui uma funcionalidade de QR Codes que visa facilitar o acesso às informações das ordens de serviço por meio de dispositivos móveis. Cada página de busca de dados possui um QR Code exclusivo que pode ser escaneado pelo celular, direcionando o usuário para a página específica da ordem de serviço.
+O [UltraCar lite](https://ultracar-lite.vercel.app/) possui uma funcionalidade de QR Codes que visa facilitar o acesso às informações das ordens de serviço por meio de dispositivos móveis. Cada página de busca de dados possui um QR Code exclusivo que pode ser escaneado pelo celular, direcionando o usuário para a página específica de busca.
 
 Embora essa funcionalidade ainda não esteja completa, devido ao prazo limitado de desenvolvimento, a ideia é que futuramente os QR Codes contenham informações adicionais, como o status e as informações específicas de cada área. Isso seria muito útil para oficinas mecânicas que desejam ter mais agilidade no serviço e compartilhar informações com seus clientes de maneira rápida e fácil.
 
