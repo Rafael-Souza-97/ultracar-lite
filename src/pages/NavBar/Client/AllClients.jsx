@@ -26,11 +26,11 @@ function AllClients() {
         {mockClients.map((client, index) => (
           <tr key={index} className={ index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
             <td className="border px-4 py-2">{ client.name }</td>
-            <td className="border text-center first-line:px-4 py-2">{client.cpf}</td>
+            <td className="border text-center px-4 py-2">{client.cpf}</td>
             <td className="border text-center px-4 py-2">{client.email}</td>
             <td className="border text-center px-4 py-2">{client.cel}</td>
-            <td className="border text-center file:px-4 py-2">{client.neighbor}</td>
-            <td className="border text-center px-4 py-2">{client.startDate}</td>
+            <td className="border text-center px-4 py-2">{client.address}</td>
+            <td className="border text-center px-4 py-2">{client.neighbor}</td>
             <td className="border text-center px-4 py-2">{client.car}</td>
             <td className="border text-center px-4 py-2">{client.plate}</td>
           </tr>

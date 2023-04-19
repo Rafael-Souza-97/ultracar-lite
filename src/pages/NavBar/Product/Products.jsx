@@ -76,7 +76,7 @@ function Products() {
 
       <div className='mt-24'>
         <h1 className="text-gray-600 text-center text-base sm:text-lg xl:text-xl font-light mb-5">
-          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para fazer a busca do protudo pelo celular
+          Escaneie o <span className="font-medium text-black">QRCode</span> abaixo para fazer a busca do produto pelo celular
         </h1>
       </div>
 
