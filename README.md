@@ -1,12 +1,32 @@
-# UltraCar lite
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/99055008/233121388-1ace793d-5a26-483b-852a-319c2bd76f0b.png" alt="Logo">
+</div>
 
-Desenvolvido com o objetivo de atender as necessidades de oficinas mecânicas de pequeno e médio porte, o [UltraCar lite](https://ultracar-lite.vercel.app/) é uma solução completa e simples para a gestão de seus clientes, produtos e colaboradores.
+<br>
 
-Com o [UltraCar lite](https://ultracar-lite.vercel.app/), você pode adicionar clientes e produtos de forma rápida e fácil. Além disso, a área de ordens de serviço permite que você gerencie suas atividades de maneira organizada e eficiente. Você pode visualizar o status das ordens de serviço, as peças utilizadas, o preço e outras informações importantes.
+# Ultracar lite
 
-O UltraCar Lite também possui uma área dedicada aos colaboradores da oficina, onde é possível gerenciar as atividades de cada um deles. Assim, você pode garantir que todas as tarefas sejam realizadas de maneira eficiente e dentro do prazo estabelecido. Alem disso, o [UltraCar lite](https://ultracar-lite.vercel.app/) é um software fácil de usar e com uma interface intuitiva. Compatível com dispositivos móveis e desktop, você pode acessar e gerenciar suas informações de qualquer lugar e a qualquer momento.
+O objetivo deste projeto foi criar um software de gestão de uma oficina em um prazo de 32 horas. A inspiração veio da empresa Ultracar e do seu site [Ultracarweb](https://ultracarweb.com/). Com isso em mente, desenvolvi o [Ultracar Lite](https://ultracar-lite.vercel.app/), uma versão simplificada e mais leve do software de gestão original.
 
-Não perca mais tempo com gestão manual de sua oficina mecânica. Experimente agora mesmo o UltraCar Lite e veja como ele pode ajudá-lo a gerenciar sua oficina de maneira eficiente e completa.
+Devido ao curto prazo, não pude implementar todas as funcionalidades que gostaria. Minha ideia inicial era criar um back-end com cinco tabelas (Carros, Clientes, Colaboradores, Ordens de Serviço e Produtos) e relacioná-las entre si usando TypeScript, Node, MySQL e Express. Para o front-end, pensei em usar TypeScript e React como ferramentas principais.
+
+Embora minha ideia inicial fosse criar um software fullstack, percebi que seria impossível desenvolver um back-end completo com as cinco tabelas no prazo estipulado. Decidi então focar no desenvolvimento do front-end e uma das escolhas estratégicas que fiz foi optar por JavaScript em vez de TypeScript. Embora tenha perdido as vantagens da tipagem estática, considerei que essa escolha estratégica foi necessária para cumprir o prazo.
+
+Para simular um banco de dados, utilizei mocks, mas infelizmente, não consegui implementar o armazenamento de dados no localStorage a tempo. Apesar disso, o Ultracar Lite é um projeto em andamento e pretendo continuar trabalhando nele após o término do processo seletivo.
+
+<br>
+
+## Sobre o Ultracar lite
+
+O [UltraCar lite](https://ultracar-lite.vercel.app/) é uma solução completa e simples para a gestão de oficinas mecânicas de pequeno e médio porte. Desenvolvido com o objetivo de atender às necessidades específicas desse tipo de negócio, o [UltraCar lite](https://ultracar-lite.vercel.app/) oferece recursos fáceis de usar e intuitivos para gerenciar clientes, produtos, colaboradores e ordens de serviço.
+
+Com o [UltraCar lite](https://ultracar-lite.vercel.app/), você pode adicionar clientes e produtos de forma rápida e fácil. A área de ordens de serviço permite que você gerencie suas atividades de maneira organizada e eficiente, com a visualização do status das ordens de serviço, peças utilizadas, preço e outras informações importantes.
+
+Além disso, o [UltraCar lite](https://ultracar-lite.vercel.app/) possui uma área dedicada aos colaboradores da oficina, onde é possível gerenciar as atividades de cada um deles. Com isso, é possível garantir que todas as tarefas sejam realizadas de maneira eficiente e dentro do prazo estabelecido.
+
+O [UltraCar lite](https://ultracar-lite.vercel.app/) é um software fácil de usar e com uma interface intuitiva. Compatível com dispositivos móveis e desktop, você pode acessar e gerenciar suas informações de qualquer lugar e a qualquer momento.
+
+Experimente agora mesmo o [UltraCar lite](https://ultracar-lite.vercel.app/) e descubra como ele pode ajudá-lo a gerenciar sua oficina mecânica de maneira eficiente e completa.
 
 <br>
 
@@ -54,9 +74,15 @@ O software possui as seguintes rotas:
 
 <br>
 
-## React
+## Por que escolhi JavaScript em vez de TypeScript?
 
-O [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript amplamente utilizada no desenvolvimento de interfaces de usuário. Ele possui uma série de recursos que facilitam a criação de aplicativos web modernos e eficientes. Uma das principais vantagens do React é sua capacidade de dividir o aplicativo em componentes reutilizáveis, tornando o código mais organizado e fácil de manter.
+Para o desenvolvimento do front-end, optei pelo JavaScript devido ao prazo limitado para o desenvolvimento. Embora TypeScript ofereça vantagens em relação à tipagem estática, que ajuda a evitar erros comuns e aumenta a qualidade do código, optei por JavaScript por ser uma linguagem mais ágil, o que permitiu desenvolver e entregar o projeto dentro do prazo. Além disso, a simplicidade do JavaScript se encaixa bem com a proposta do  [UltraCar lite](https://ultracar-lite.vercel.app/), que é uma solução simples e eficiente para gestão de oficinas mecânicas de pequeno e médio porte.
+
+<br>
+
+## Sobre o React
+
+O React é uma biblioteca JavaScript amplamente utilizada no desenvolvimento de interfaces de usuário. Ele possui uma série de recursos que facilitam a criação de aplicativos web modernos e eficientes. Uma das principais vantagens do React é sua capacidade de dividir o aplicativo em componentes reutilizáveis, tornando o código mais organizado e fácil de manter.
 
 Além disso, o React oferece uma série de recursos que melhoram a experiência do usuário, como a renderização rápida de componentes e a atualização dinâmica de dados. A renderização rápida é possível porque o React utiliza uma abordagem de virtual DOM, em que apenas as partes da página que precisam ser atualizadas são modificadas, em vez de renderizar a página inteira.
 
@@ -78,19 +104,31 @@ O [ContextAPI](https://reactjs.org/docs/context.html) é uma das funcionalidades
 
 <br>
 
+## QR Code
+
+O [UltraCar lite](https://ultracar-lite.vercel.app/) possui uma funcionalidade de QR Codes que visa facilitar o acesso às informações das ordens de serviço por meio de dispositivos móveis. Cada página de busca de dados possui um QR Code exclusivo que pode ser escaneado pelo celular, direcionando o usuário para a página específica da ordem de serviço.
+
+Embora essa funcionalidade ainda não esteja completa, devido ao prazo limitado de desenvolvimento, a ideia é que futuramente os QR Codes contenham informações adicionais, como o status e as informações específicas de cada área. Isso seria muito útil para oficinas mecânicas que desejam ter mais agilidade no serviço e compartilhar informações com seus clientes de maneira rápida e fácil.
+
+É importante ressaltar que, apesar dos QR Codes ainda não estarem totalmente funcionais, a funcionalidade de busca através de um dispositivo móvel já está ativa. Com essa funcionalidade, os usuários podem fazer a busca por meio de seus dispositivos móveis através do QR Code, o que ajuda as oficinas a organizarem seus serviços de maneira simples e rápida. A ideia é continuar aprimorando a plataforma, incluindo novas funcionalidades que possam facilitar ainda mais a vida dos usuários.
+
+<br>
+
 ## Estilização
 
-No software UltraCar Lite, foi utilizado três ferramentas para estilizar a aplicação web: [Tailwind](https://tailwindcss.com/), [Material UI](https://mui.com/) e [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS). O [Tailwind](https://tailwindcss.com/) é um framework [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) utilitário que nos permite criar estilos customizados rapidamente, enquanto o [Material UI](https://mui.com/) é um conjunto de componentes React pré-construídos que seguem as diretrizes de design do Google. Além disso, o [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) nativo foi utilizado em alguns casos para complementar o estilo dos componentes.
+Para a estilização, utilizei o framework Tailwind de forma estratégica para deixar o site estilizado e responsivo em pouco tempo. O Tailwind é um framework CSS utilitário que permite criar estilos customizados rapidamente, sendo essencial para atender às demandas de prazo do projeto.
 
-Utilzei o [Tailwind](https://tailwindcss.com/) principalmente para estilizar os componentes criados do zero, enquanto [Material UI](https://mui.com/) foi utilizado para os campos de input. Ambos foram customizados para atender às necessidades de design e experiência do usuário específicas do projeto.
+Os campos de input, por sua vez, foram estilizados utilizando o Material UI, conjunto de componentes React pré-construídos que foram personalizados para atender às necessidades específicas do projeto. Neles, implementei máscaras para CPF, telefones e datas, permitindo que o preenchimento desses campos seja feito automaticamente, evitando erros comuns de digitação e tornando a experiência do usuário mais ágil e intuitiva.
 
-No geral, a combinação dessas ferramentas nos permitiu criar uma interface web responsiva, atraente e funcional.
+Além disso, utilizei o CSS nativo em alguns casos para complementar o estilo dos componentes.
+
+Com a combinação dessas ferramentas, foi possível criar uma interface web responsiva, atraente e funcional em um curto período de tempo.
 
 <br>
 <br>
 
 <details>
-  <summary><strong>INSTALAÇÃO DO SOFTWARE UlTRACAR LITE</strong></summary><br />
+  <summary><strong>INSTALAÇÃO DO SOFTWARE ULTRACAR LITE</strong></summary><br />
 
 ## Instalação 
 
@@ -112,13 +150,7 @@ cd ultracar-lite
 
 <br>
 
-- Instale as depëndencias, caso necessário, com `npm install`:
-
-```bash
-npm install
-```
-
-- Instale as depëndencias do Front-end com `npm install`:
+- Instale as depëndencias com `npm install`:
 
 ```bash
 npm install
@@ -137,11 +169,10 @@ npm install
 npm start
 ```
 
-Abra [http://localhost:3000](http://localhost:5173/) no seu navegador para visualiza-lo.
+Abra [http://localhost:5173](http://localhost:5173/) no seu navegador para visualiza-lo.
 
 <hr>
 <br>
-<hr>
 
 </details>
 
@@ -171,10 +202,13 @@ Abra [http://localhost:3000](http://localhost:5173/) no seu navegador para visua
 - Biblioteca de componentes: [Material UI](https://mui.com/)
 - Linguagem de Estilização: [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-<br>
-<hr>
-
 ## Deploy
 Este projeto implantado no [Vercel](https://vercel.com/). Você pode acessar o link do site aqui: [UltraCar lite](https://ultracar-lite.vercel.app/)
+
 <br>
+
+## Preview
+
+https://user-images.githubusercontent.com/99055008/233128997-e9bef20a-b771-4110-9b7c-3087b8b26955.mp4
+
 <hr>
